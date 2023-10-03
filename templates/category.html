@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cat_pd_filter</title>
+</head>
+<body>
+<h1>JP</h1>
+<h1>Category:{{categories}}</h1>
+
+<div>
+    {% for pd in products %}
+    <b>category:</b>{{pd.Category}}<br>
+    <b>Description:</b>{{pd.desc}}<br>
+    <b>created_By:</b>{{pd.created_date}}<br>
+    {% endfor %}
+</div>
+
+</body>
+</html>
